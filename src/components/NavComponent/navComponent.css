@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+#nav {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  top: -230px;
+  left: -230px;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s;
+  /* z-index: 500; */
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav a:hover {
+  color: #e6b9be;
+}
+
+#nav.open {
+  transform: translate3d(50px, 50px, 0);
+}
+
+.circle {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.circle div {
+  transform: rotate(180deg);
+}
+.open .circle {
+  opacity: 1;
+  pointer-events: auto;
+}
+#ham-icon {
+  background-color: #e5eff8;
+  top: 250px;
+  right: 250px;
+  bottom: 250px;
+  left: 250px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transition: background-color 0.5s;
+  pointer-events: auto;
+}
+#ham-icon:hover {
+  background-color: #f8f8f8;
+}
+#ham-icon img {
+  width: 40px;
+}
+.open #ham-icon {
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
+}
+.m1 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #f3f8fc;
+  transition-delay: 0s;
+}
+.open .m1 {
+  transition-delay: 0s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
+  opacity: 1;
+}
+
+.m2 {
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+  background: #f2f7fc;
+  transition-delay: 0.1s;
+}
+.open .m2 {
+  transition-delay: 0.1s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
+  opacity: 1;
+}
+
+.m3 {
+  top: 100px;
+  right: 100px;
+  bottom: 100px;
+  left: 100px;
+  background: #eff5fb;
+  transition-delay: 0.2s;
+}
+.open .m3 {
+  transition-delay: 0.2s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
+  opacity: 1;
+}
+
+.m4 {
+  top: 150px;
+  right: 150px;
+  bottom: 150px;
+  left: 150px;
+  background: #edf4fa;
+  transition-delay: 0.3s;
+}
+.open .m4 {
+  transition-delay: 0.3s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
+  opacity: 1;
+}
+
+.m5 {
+  top: 200px;
+  right: 200px;
+  bottom: 200px;
+  left: 200px;
+  background: #eaf2f9;
+  transition-delay: 0.3s;
+}
+.open .m5 {
+  transition-delay: 0.3s;
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
+  opacity: 1;
+}
+
+/* --------------------------- MEDIA QUERY ---------------------------- */
+
+@media only screen and (max-width: 450px) {
+  #nav {
+    width: 450px;
+    height: 450px;
+    top: -180px;
+    left: -180px;
+    font-size: 18px;
+  }
+  #ham-icon {
+    top: 200px;
+    right: 200px;
+    bottom: 200px;
+    left: 200px;
+  }
+  #ham-icon img {
+    width: 30px;
+  }
+  .m5 {
+    top: 160px;
+    right: 160px;
+    bottom: 160px;
+    left: 160px;
+  }
+  .m4 {
+    top: 120px;
+    right: 120px;
+    bottom: 120px;
+    left: 120px;
+  }
+  .m3 {
+    top: 80px;
+    right: 80px;
+    bottom: 80px;
+    left: 80px;
+  }
+  .m2 {
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+  }
+  .m1 {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+}
