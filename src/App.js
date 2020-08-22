@@ -8,7 +8,7 @@ class App extends React.Component{
     return(
       <BrowserRouter>
         <NavComponent/>
-        {/* <Route exact path="/" component={HomeComponent}/> */}
+        <Route exact path="/" component={HomeComponent}/>
         {/* <Route exact path="/" component={}/>
         <Route exact path="/" component={}/>
         <Route exact path="/" component={}/>

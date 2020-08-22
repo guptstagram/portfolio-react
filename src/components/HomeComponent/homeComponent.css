@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.hello-text-big-font{font-size: 15rem;}
+.hello-text-blue-dot{color: #E5EFF8;transition: color 1s;}
+
+#hello-section-grey{
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+#hello-section-blue-half{
+    width: 50%;
+    background-color: #E5EFF8;
+    height: 100%;
+    transition:width 1s;
+}
+
+#hello-text-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    left: 0;
+    transition: left 1s;
+}
+
+#intro-text-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+.intro-text-name-font span:hover{
+    color: tomato;
+    animation: abc linear .5s;
+}
+
+@keyframes abc{
+    0% { 
+        font-size: 7rem;
+        transform: scale(1, 1); 
+        color: red;
+    } 
+    25% { 
+        font-size: 13rem;
+        transform: scale(0.1, 0.1); 
+        color: green;
+    } 
+
+    50% { 
+        font-size: 10rem;
+        transform: scale(0.5, 0.5); 
+        color: greenyellow;
+    } 
+    100% { 
+        font-size: 7rem;
+        transform: scale(1, 1); 
+    } 
+}
+
+.intro-text-name-font{font-size: 7rem;}
+.intro-text-developer-font{font-size: 3.8rem;}
+.intro-text-apps-font{font-size: 2.9rem;}
+
+.after-danda:after {
+    content: "|";
+    /* content: "।"; */
+    opacity: 50%;
+    animation: blink-danda 0.8s ease-in-out infinite;
+}
+@keyframes blink-danda{
+    50%{
+        opacity: 0;
+    }
+}
+
+.intro-text-quote-font{text-align: center;padding-top: 50px;}
+
+
+/* --------------- MEDIA QUERY -------------- */
+
+@media only screen and (max-width: 992px) {
+    .intro-text-name-font{font-size: 5rem;}
+    .intro-text-developer-font{font-size: 2.7rem;}
+    .intro-text-apps-font{font-size: 2.05rem;}
+}
+
+@media only screen and (max-width: 768px) {
+    .hello-text-big-font{font-size: 9rem;}
+
+    .intro-text-name-font{font-size: 2rem;}
+    .intro-text-developer-font{font-size: 1.08rem;}
+    .intro-text-apps-font{font-size: 0.82rem;}
+}
+
+@media only screen and (max-height: 550px) {
+    .hello-text-big-font{font-size: 12rem;}
+}
+
+@media only screen and (max-height: 450px) {
+    .hello-text-big-font{font-size: 10rem;}
+
+    .intro-text-name-font{font-size: 3rem;}
+    .intro-text-developer-font{font-size: 1.6rem;}
+    .intro-text-apps-font{font-size: 1.2rem;}
+}
+
