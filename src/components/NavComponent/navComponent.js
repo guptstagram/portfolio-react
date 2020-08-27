@@ -6,6 +6,14 @@ import crossIcon from '../assets/cross.png';
 
 class NavComponent extends React.Component{
 
+    componentDidMount=()=>{
+        document.querySelectorAll(".navlink").forEach(circl => {
+            circl.addEventListener("click",()=>{
+                this.openCloseMenu();
+            })
+        });
+    }
+
     openCloseMenu=()=>{
         document.querySelector("#nav").classList.toggle("open");
         if (document.querySelector("#nav").classList.contains("open")){
@@ -20,19 +28,19 @@ class NavComponent extends React.Component{
     render(){
         return(
             <div id="nav">
-                <NavLink className="circle m1" to="/contact">
+                <NavLink className="navlink circle m1" to="/contact">
                     <div>Contact</div>
                 </NavLink>
-                <NavLink className="circle m2" to="/about">
+                <NavLink className="navlink circle m2" to="/about">
                     <div>About</div>
                 </NavLink>
-                <NavLink className="circle m3" to="/experience">
+                <NavLink className="navlink circle m3" to="/experience">
                     <div>Experience</div>
                 </NavLink>
-                <NavLink className="circle m4" to="/skills">
+                <NavLink className="navlink circle m4" to="/skills">
                     <div>Skills</div>
                 </NavLink>
-                <NavLink className="circle m5" to="/">
+                <NavLink className="navlink circle m5" to="/">
                     <div>Home</div>
                 </NavLink>      
                 <div id="ham-icon" className="circle" onClick={this.openCloseMenu}>
