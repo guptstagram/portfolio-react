@@ -11,7 +11,7 @@ class HomeComponent extends React.Component {
 
   movingHelloText = () => {
     setTimeout(() => {
-      document.getElementById("hello-text-box").style.left = "110%";
+      document.getElementById("hello-text-box").style.left = "180%";
     }, 2000);
   };
 

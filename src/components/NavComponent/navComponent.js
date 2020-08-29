@@ -32,10 +32,10 @@ class NavComponent extends React.Component{
                     <div>Contact</div>
                 </NavLink>
                 <NavLink className="navlink circle m2" to="/about">
-                    <div>About</div>
+                    <div>Social</div>
                 </NavLink>
                 <NavLink className="navlink circle m3" to="/experience">
-                    <div>Experience</div>
+                    <div>About</div>
                 </NavLink>
                 <NavLink className="navlink circle m4" to="/skills">
                     <div>Skills</div>
