@@ -44,7 +44,7 @@ class NavComponent extends React.Component{
                     <div>Home</div>
                 </NavLink>      
                 <div id="ham-icon" className="circle" onClick={this.openCloseMenu}>
-                    <img id="ham-icon-img" src={menuIcon} />
+                    <img id="ham-icon-img" src={menuIcon} alt="nav-hamburger"/>
                 </div> 
             </div>
         );
