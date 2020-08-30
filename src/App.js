@@ -10,10 +10,10 @@ class App extends React.Component{
         <NavComponent/>
         <Switch>
           <Route exact path="/" component={HomeComponent}/>
-          {/* <Route exact path="/" component={}/>
-          <Route exact path="/" component={}/>
-          <Route exact path="/" component={}/>
-          <Route exact path="/" component={}/> */}
+          {/* <Route exact path="/skills" component={}/>
+          <Route exact path="/experience" component={}/>
+          <Route exact path="/connect" component={}/>
+          <Route exact path="/about" component={}/> */}
         </Switch>
       </BrowserRouter>
     );

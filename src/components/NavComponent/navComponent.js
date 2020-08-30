@@ -28,14 +28,14 @@ class NavComponent extends React.Component{
     render(){
         return(
             <div id="nav">
-                <NavLink className="navlink circle m1" to="/contact">
-                    <div>Contact</div>
+                <NavLink className="navlink circle m1" to="/about">
+                    <div>About</div>
                 </NavLink>
-                <NavLink className="navlink circle m2" to="/about">
-                    <div>Social</div>
+                <NavLink className="navlink circle m2" to="/connect">
+                    <div>Connect</div>
                 </NavLink>
                 <NavLink className="navlink circle m3" to="/experience">
-                    <div>About</div>
+                    <div>Experience</div>
                 </NavLink>
                 <NavLink className="navlink circle m4" to="/skills">
                     <div>Skills</div>
