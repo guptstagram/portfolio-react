@@ -82,8 +82,7 @@
 .intro-text-apps-font{font-size: 2.9rem;}
 
 .after-danda:after {
-    content: "|";
-    /* content: "।"; */
+    content: "|" !important;
     opacity: 50%;
     animation: blink-danda 0.8s ease-in-out infinite;
 }
