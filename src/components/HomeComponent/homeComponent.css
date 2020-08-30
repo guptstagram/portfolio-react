@@ -51,7 +51,7 @@
 
 .intro-text-name-font span:hover{
     color: tomato;
-    animation: abc linear .5s;
+    animation: abc linear .25s;
 }
 
 @keyframes abc{
