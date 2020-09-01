@@ -84,11 +84,20 @@
 .after-danda:after {
     content: "|" !important;
     opacity: 100%;
-    animation: blink-danda 0.8s ease-in-out infinite;
+    animation: blink-danda 2s ease-in-out infinite;
 }
 @keyframes blink-danda{
+    0%{
+        opacity: 50%;
+    }
+    25%{
+        opacity: 75%;
+    }
     50%{
         opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 
