@@ -8,15 +8,10 @@ import "./homeComponent.css";
 class HomeComponent extends React.Component {
 
   componentDidMount = () => {
-    // clearOutThings();
     increaseBlueColorWidth();
     movingHelloText();
     increasingVisibilityofIntroText();
   };
-
-  componentWillUnmount=()=>{
-    clearOutThings();
-  }
 
   render() {
     return (

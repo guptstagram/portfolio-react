@@ -6,6 +6,7 @@ export const increasingVisibilityofIntroText = () => {
     let currTime = 3000;
 
     setTimeout(() => {
+      document.querySelector(".intro-text-name-font").innerHTML="";
       document
         .querySelector(".intro-text-name-font")
         .classList.add("after-danda");
@@ -23,6 +24,7 @@ export const increasingVisibilityofIntroText = () => {
     }, currTime);
 
     setTimeout(() => {
+      document.querySelector(".intro-text-developer-font").innerHTML="";
       document
         .querySelector(".intro-text-developer-font")
         .classList.add("after-danda");
@@ -40,6 +42,7 @@ export const increasingVisibilityofIntroText = () => {
     }, currTime);
 
     setTimeout(() => {
+      document.querySelector(".intro-text-apps-font").innerHTML="";
       document
         .querySelector(".intro-text-apps-font")
         .classList.add("after-danda");
