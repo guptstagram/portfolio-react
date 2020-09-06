@@ -1,5 +1,4 @@
 import React from "react";
-import {clearOutThings} from './clearOutThings';
 import {increaseBlueColorWidth} from './increaseBlueColorWidth';
 import {movingHelloText} from './movingHelloText';
 import {increasingVisibilityofIntroText} from './increasingVisibilityofIntroText';
