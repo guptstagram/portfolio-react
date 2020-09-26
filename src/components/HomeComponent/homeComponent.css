@@ -101,7 +101,12 @@
     }
 }
 
-.intro-text-quote-font{text-align: center;padding-top: 50px;}
+.intro-text-quote-font{
+    text-align: center;
+    padding-top: 50px;
+    opacity: 0;
+    transition: opacity 1s;
+}
 
 
 /* --------------- MEDIA QUERY -------------- */
