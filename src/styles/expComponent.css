@@ -23,6 +23,10 @@
     align-items: center;
     padding: 2rem;
     text-align: center;
+    /* background: url("../images/undraw_Freelancer_re_irh4.svg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .exp-box p{
@@ -38,6 +42,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .exp-box{
+        background-position: unset;
+    }
     .exp-box p{
         font-size: 16px;
     }

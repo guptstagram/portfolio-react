@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {downloadResumeButtonClicked} from './downloadResumeButtonClicked';
-import "./aboutComponent.css";
+import "../../styles/aboutComponent.css";
 
 export class AboutComponent extends Component {
     render() {

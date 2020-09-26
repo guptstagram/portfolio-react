@@ -47,6 +47,10 @@
     flex-direction: column;
     opacity: 1;
     font-family: 'Lexend Giga', sans-serif;
+    background: url("../assets/home-hero.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .intro-text-name-font span:hover{
@@ -77,9 +81,18 @@
     } 
 }
 
-.intro-text-name-font{font-size: 7rem;}
-.intro-text-developer-font{font-size: 3.8rem;}
-.intro-text-apps-font{font-size: 2.9rem;}
+.intro-text-name-font{font-size: 7rem;animation: stroke 0.01s ease-in-out infinite alternate;}
+.intro-text-developer-font{font-size: 3.8rem;animation: stroke 0.01s ease-in-out infinite alternate;}
+.intro-text-apps-font{font-size: 2.9rem;animation: stroke 0.01s ease-in-out infinite alternate;}
+
+@keyframes stroke {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #E5EFF8, 0 0 4px #E5EFF8, 0 0 5px #E5EFF8, 0 0 6px #E5EFF8, 0 0 7px #E5EFF8;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 3px #F8F8F8, 0 0 4px #F8F8F8, 0 0 5px #F8F8F8, 0 0 6px #F8F8F8, 0 0 7px #F8F8F8, 0 0 8px #F8F8F8;
+    }
+}
 
 .after-danda:after {
     content: "|" !important;
@@ -110,6 +123,12 @@
 
 
 /* --------------- MEDIA QUERY -------------- */
+
+@media only screen and (max-width: 1024px) {
+    #intro-text-box{
+        background-size: 80%;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .intro-text-name-font{font-size: 5rem;}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './navComponent.css'
+import '../../styles/navComponent.css'
 import {NavLink} from "react-router-dom";
 import menuIcon from '../../assets/menu.png';
 import crossIcon from '../../assets/cross.png';

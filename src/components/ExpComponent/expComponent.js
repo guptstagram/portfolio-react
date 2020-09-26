@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {generateExpTime} from './generateExpTime';
 import Fade from '../../transitions/fade.js';
-import "./expComponent.css"
+import "../../styles/expComponent.css"
 
 export class ExpComponent extends Component {
 
