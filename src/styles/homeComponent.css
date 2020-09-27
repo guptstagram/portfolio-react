@@ -53,32 +53,46 @@
     background-repeat: no-repeat;
 }
 
-.intro-text-name-font span:hover{
-    color: tomato;
-    animation: abc linear .25s;
+
+.text-effect{
+    color: #ed4457;
+    animation: textEffect ease-out 1s;
 }
 
-@keyframes abc{
-    0% { 
-        font-size: 7rem;
-        transform: scale(1, 1); 
-        color: red;
-    } 
-    25% { 
-        font-size: 13rem;
-        transform: scale(0.1, 0.1); 
-        color: #F8F8F8;
-    } 
-
-    50% { 
-        font-size: 10rem;
-        transform: scale(0.5, 0.5); 
-        color: red;
-    } 
-    100% { 
-        font-size: 7rem;
-        transform: scale(1, 1); 
-    } 
+@keyframes textEffect{
+    0%{
+        transform: scale(0.4);
+    }
+    10%{
+        transform: scale(0.4);
+    }
+    20%{
+        transform: scale(0.4);
+    }
+    30%{
+        transform: scale(0.6);
+    }
+    40%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.7);
+    }
+    60%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(0.8);
+    }
+    80%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .intro-text-name-font{font-size: 7rem;animation: stroke 0.01s ease-in-out infinite alternate;}
@@ -124,6 +138,14 @@
 
 /* --------------- MEDIA QUERY -------------- */
 
+@media only screen and (min-width: 1025px) {
+    .intro-text-name-font span{
+        display: inline-block;
+    }
+    .intro-text-name-font span:hover{
+        color: #ed4457;
+    }
+}
 @media only screen and (max-width: 1024px) {
     #intro-text-box{
         background-size: 80%;

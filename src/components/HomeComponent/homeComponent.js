@@ -5,6 +5,7 @@ import {addingLineBefore} from './addingLineBefore';
 import {addTextToLines} from './addTextToLines';
 import {addingLineAfter} from './addingLineAfter';
 import {quoteOpacity} from './quoteOpacityIncrease';
+
 import "../../styles/homeComponent.css";
 
 class HomeComponent extends React.Component {

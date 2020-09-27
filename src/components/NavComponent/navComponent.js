@@ -42,22 +42,7 @@ class NavComponent extends React.Component{
                 </NavLink>
                 <NavLink className="navlink circle m5" to="/">
                     <div>Home</div>
-                </NavLink>      
-                {/* <a className="navlink circle m1" href="/about">
-                    <div>About</div>
-                </a>
-                <a className="navlink circle m2" href="/connect">
-                    <div>Connect</div>
-                </a>
-                <a className="navlink circle m3" href="/experience">
-                    <div>Experience</div>
-                </a>
-                <a className="navlink circle m4" href="/skills">
-                    <div>Skills</div>
-                </a>
-                <a className="navlink circle m5" href="/">
-                    <div>Home</div>
-                </a>     */}
+                </NavLink>
                 <div id="ham-icon" className="circle" onClick={this.openCloseMenu}>
                     <img id="ham-icon-img" src={menuIcon} alt="nav-hamburger"/>
                 </div> 
