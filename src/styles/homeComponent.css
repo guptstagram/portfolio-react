@@ -48,7 +48,7 @@
     opacity: 1;
     font-family: 'Lexend Giga', sans-serif;
     background: url("../assets/home-hero.svg");
-    background-size: 60%;
+    background-size: 60% 90%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -95,7 +95,7 @@
     }
 }
 
-.intro-text-name-font{font-size: 7.5rem;animation: stroke 0.01s ease-in-out infinite alternate;}
+.intro-text-name-font{font-size: 7rem;animation: stroke 0.01s ease-in-out infinite alternate;}
 .intro-text-developer-font{font-size: 3.8rem;animation: stroke 0.01s ease-in-out infinite alternate;}
 .intro-text-apps-font{font-size: 2.9rem;animation: stroke 0.01s ease-in-out infinite alternate;}
 
@@ -139,6 +139,9 @@
 /* --------------- MEDIA QUERY -------------- */
 
 @media only screen and (min-width: 1025px) {
+    .intro-text-name-font{
+        font-size: 7.5rem;
+    }
     .intro-text-name-font span{
         display: inline-block;
     }
