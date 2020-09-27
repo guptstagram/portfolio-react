@@ -14,7 +14,7 @@ class HomeComponent extends React.Component {
     super(props);
     this.line1 = "I'M SOURABH";
     this.line2 = "FULL-STACK DEVELOPER";
-    this.line3 = "I DEVELOP WEB & MOBILE APPS";
+    this.line3 = "I DESIGN & DEVELOP WEB APPS";
     this.line4 = "I stand on a fine spot where Design fuses into Code.";
     this.timer1=null;
     this.timer2=null;
