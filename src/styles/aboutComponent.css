@@ -61,6 +61,8 @@
 }
 #about-pic img{
     width: 100%;
+    box-shadow: 0 0 15px 0 rgba(47, 48, 50, 0.15);
+    border-radius: 50%;
 }
 
 .resume-button button{

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {downloadResumeButtonClicked} from './downloadResumeButtonClicked';
-import aboutImg from "../../assets/aboutImg.png"
+import aboutImg from "../../assets/snap.png"
 import "../../styles/aboutComponent.css";
 
 export class AboutComponent extends Component {
