@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {generateExpTime} from './generateExpTime';
 import "../../styles/expComponent.css"
 
-export class ExpComponent extends Component {
+class ExpComponent extends Component {
 
     componentDidMount=()=>{
         generateExpTime();

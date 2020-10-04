@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-#exp-section{
+#connect-section{
     width: 100%;
     height:100%;
     background-color: #E5EFF8;
@@ -16,20 +16,21 @@
     justify-content: center;
 }
 
-.exp-box{
+.connect-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     text-align: center;
-    background: url("../assets/exp-hero.svg");
-    background-size: 60% 100%;
+    margin-bottom: 10rem;
+    /* background: url("../images/undraw_product_teardown_elol.svg");
+    background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
-.exp-box p{
+.connect-box p{
     margin-top: 20px;
     font-family: 'Lexend Peta', sans-serif;
     font-weight: bold;
@@ -47,28 +48,61 @@
     }
 }
 
-.red-text{
+.connect-box a{
     color: #ed4457;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 1024px) {
-    .exp-box{
-        background-size: 90%;
-    }
+.connect-icons{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px 0 rgba(47, 48, 50, 0.15);
 }
+
+.connect-icons-a svg:hover{
+    fill: #ed4457;
+}
+
+.connect-icon-box{
+    /* height: 100px;
+    width: 100px; */
+    transform: scale3d(4,4,4);
+    position: absolute;
+    bottom: 80px;
+    background: #e5eff8;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.connect-icons-a{
+    background-color: #F8F8F8;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 80px;
+    transition: all 0.5s;
+}
+
 @media only screen and (max-width: 576px) {
-    .exp-box p{
-        font-size: 16px;
-    }
-}
-@media only screen and (max-width: 375px) {
-    .exp-box p{
+    .connect-box p{
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 360px) {
-    .exp-box p{
+@media only screen and (max-width: 375px) {
+    .connect-box p{
         font-size: 12px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .connect-box p{
+        font-size: 10px;
     }
 }
 @media only screen and (max-height: 420px) {

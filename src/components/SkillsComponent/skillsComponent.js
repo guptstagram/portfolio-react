@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "../../styles/skillsComponent.css"
 
-export class SkillsComponent extends Component {
+class SkillsComponent extends Component {
     render() {
         return (
             <div id="wrapper">

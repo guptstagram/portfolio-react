@@ -3,7 +3,7 @@ import {downloadResumeButtonClicked} from './downloadResumeButtonClicked';
 import aboutImg from "../../assets/snap.png"
 import "../../styles/aboutComponent.css";
 
-export class AboutComponent extends Component {
+class AboutComponent extends Component {
     render() {
         return (
             <div id="wrapper">
