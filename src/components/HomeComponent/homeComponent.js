@@ -89,13 +89,13 @@ class HomeComponent extends React.Component {
 
   render() {
     return (
-      <div id="wrapper">
-        <div id="hello-section-grey">
-          <div id="hello-section-blue-half">
+      <div id={this.props.nightMode?"night-wrapper":"wrapper"}>
+        <div id={this.props.nightMode?"hello-section-grey-night":"hello-section-grey"}>
+          <div id={this.props.nightMode?"hello-section-night-half":"hello-section-blue-half"}>
             <div id="hello-text-box">
               <div id="hello-text">
-                <div className="hello-text-big-font">HE</div>
-                <div className="hello-text-big-font">
+                <div className={`hello-text-big-font ${this.props.nightMode?"hello-text-night":null}`}>HE</div>
+                <div className={`hello-text-big-font ${this.props.nightMode?"hello-text-night":null}`}>
                   LLO<span className="hello-text-blue-dot">.</span>
                 </div>
               </div>
@@ -104,7 +104,7 @@ class HomeComponent extends React.Component {
               <div className="intro-text-name-font"></div>
               <div className="intro-text-developer-font"></div>
               <div className="intro-text-apps-font"></div>
-              <div className="intro-text-quote-font">
+              <div className={this.props.nightMode?"intro-text-quote-font-night":"intro-text-quote-font"}>
                 <q>I stand on a fine spot where Design fuses into Code.</q>
               </div>
             </div>

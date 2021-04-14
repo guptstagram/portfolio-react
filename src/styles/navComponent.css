@@ -17,6 +17,9 @@
   text-decoration: none;
   color: black;
 }
+.nav-night a {
+  color: #e4e6eb !important;
+}
 
 #nav a:hover {
   color: #e6b9be;
@@ -57,6 +60,9 @@
   transition: background-color 0.5s;
   pointer-events: auto;
 }
+.ham-icon-night {
+  background-color: #121212 !important;
+}
 #ham-icon:hover {
   background-color: #f8f8f8;
 }
@@ -74,6 +80,9 @@
   background: #f3f8fc;
   transition-delay: 0s;
 }
+.m1-night {
+  background: #15202b;
+}
 .open .m1 {
   transition-delay: 0s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
@@ -87,6 +96,9 @@
   left: 50px;
   background: #f2f7fc;
   transition-delay: 0.1s;
+}
+.m2-night{
+  background: #131d27;
 }
 .open .m2 {
   transition-delay: 0.1s;
@@ -102,6 +114,9 @@
   background: #eff5fb;
   transition-delay: 0.2s;
 }
+.m3-night{
+  background: #111a22;
+}
 .open .m3 {
   transition-delay: 0.2s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
@@ -113,8 +128,11 @@
   right: 150px;
   bottom: 150px;
   left: 150px;
+  transition-delay: 0.2s;
   background: #edf4fa;
-  transition-delay: 0.3s;
+}
+.m4-night{
+  background: #0f161e;
 }
 .open .m4 {
   transition-delay: 0.3s;
@@ -129,6 +147,9 @@
   left: 200px;
   background: #eaf2f9;
   transition-delay: 0.3s;
+}
+.m5-night {
+  background: #0d131a;
 }
 .open .m5 {
   transition-delay: 0.3s;

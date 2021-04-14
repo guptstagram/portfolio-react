@@ -7,6 +7,6 @@ export const generateExpTime=()=>{
     const years=Math.floor(diffDays/365);
     const months=Math.floor((diffDays%365)/30);
     const days=Math.floor((diffDays%365)%30);
-    const expVal=`${years} year(s) ${months} month(s) and ${days-1} day(s)`
+    const expVal=`${years} year(s) ${months} month(s) and ${days} day(s)`
     exp.innerHTML=expVal;
 }

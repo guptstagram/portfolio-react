@@ -8,8 +8,17 @@
     position: fixed;
     box-sizing: border-box;
 }
+#night-wrapper{
+    background:#404040;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    box-sizing: border-box;
+}
 
 .hello-text-big-font{font-size: 15rem;}
+.hello-text-night{color:#F8F8F8;}
 .hello-text-blue-dot{color: #E5EFF8;transition: color 1s;}
 
 #hello-section-grey{
@@ -17,10 +26,23 @@
     height: 100%;
     background-color: #F8F8F8;
 }
+#hello-section-grey-night{
+    width: 100%;
+    height: 100%;
+    background-color: #404040;
+}
+
+/* #121212 */
 
 #hello-section-blue-half{
     width: 50%;
     background-color: #E5EFF8;
+    height: 100%;
+    transition:width 1s;
+}
+#hello-section-night-half{
+    width: 50%;
+    background-color: #121212;
     height: 100%;
     transition:width 1s;
 }
@@ -129,6 +151,13 @@
 }
 
 .intro-text-quote-font{
+    text-align: center;
+    padding-top: 50px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.intro-text-quote-font-night{
+    color:#fff;
     text-align: center;
     padding-top: 50px;
     opacity: 0;

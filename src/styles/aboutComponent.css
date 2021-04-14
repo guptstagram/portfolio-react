@@ -12,11 +12,25 @@
     position: fixed;
     box-sizing: border-box;
 }
+#night-wrapper{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    box-sizing: border-box;
+}
 
 #about-section{
     width: 100%;
     height:100%;
     background-color: #E5EFF8;
+    display: flex;
+}
+
+#about-section-night{
+    width: 100%;
+    height:100%;
+    background-color: #121212;
     display: flex;
 }
 
@@ -86,7 +100,15 @@
 .resume-button button:focus{
     outline: none;
 }
-
+#about-section-night h1,#about-section-night h3,#about-section-night p{
+    color: #949494;
+}
+#about-section-night .resume-button button{
+    background: #0f161e;
+}
+#about-section-night .resume-button button:hover{
+    background: #15202b;
+}
 /* --------------- MEDIA QUERY -------------- */
 
 @media only screen and (max-width: 1024px) {

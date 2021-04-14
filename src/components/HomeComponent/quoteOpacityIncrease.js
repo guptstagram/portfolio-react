@@ -1,3 +1,4 @@
 export const quoteOpacity = () => {
-    document.querySelector(".intro-text-quote-font").style.opacity=1;
+    const ele=document.querySelector(".intro-text-quote-font")===null?document.querySelector(".intro-text-quote-font-night"):document.querySelector(".intro-text-quote-font")
+    ele.style.opacity=1;
 }

@@ -7,11 +7,25 @@
     position: fixed;
     box-sizing: border-box;
 }
+#night-wrapper{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    position: fixed;
+    box-sizing: border-box;
+}
 
 #connect-section{
     width: 100%;
     height:100%;
     background-color: #E5EFF8;
+    display: flex;
+    justify-content: center;
+}
+#connect-section-night{
+    width: 100%;
+    height:100%;
+    background-color: #121212;
     display: flex;
     justify-content: center;
 }
@@ -66,8 +80,6 @@
 }
 
 .connect-icon-box{
-    /* height: 100px;
-    width: 100px; */
     transform: scale3d(4,4,4);
     position: absolute;
     bottom: 80px;
@@ -75,6 +87,12 @@
     z-index: 1;
     cursor: pointer;
     margin-left: 10px;
+}
+.connect-icon-box-night{
+    background: #121212;
+}
+.connect-icon-box-night svg{
+    fill:rgb(136, 153, 166);
 }
 
 .connect-icons-a{
@@ -88,6 +106,9 @@
     position: absolute;
     bottom: 80px;
     transition: all 0.5s;
+}
+.connect-icons-night .connect-icons-a{
+    background: rgb(136, 153, 166);
 }
 
 @media only screen and (max-width: 576px) {

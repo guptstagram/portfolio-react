@@ -6,22 +6,28 @@ import SkillsComponent from './components/SkillsComponent/skillsComponent';
 import ExpComponent from './components/ExpComponent/expComponent';
 import AboutComponent from './components/AboutComponent/aboutComponent';
 import ConnectComponent from './components/connectComponent/connectComponent';
+import NightModeComponent from './components/NightModeComponent/nightModeComponent';
 
-class App extends React.Component{
-  render(){
-    return(
-      <BrowserRouter>
-        <NavComponent/>
-        <Switch>
-          <Route exact path="/" component={HomeComponent}/>
-          <Route exact path="/skills" component={SkillsComponent}/>
-          <Route exact path="/experience" component={ExpComponent}/>
-          <Route exact path="/connect" component={ConnectComponent}/>
-          <Route exact path="/about" component={AboutComponent}/>
-        </Switch>
-      </BrowserRouter>
-    );
+const App=()=>{
+  const [nightMode,setNightMode] = React.useState(false);
+
+  const handleNightMode=()=>{
+    setNightMode(!nightMode);
   }
+
+  return(
+    <BrowserRouter>
+      <NavComponent nightMode={nightMode}/>
+      <NightModeComponent nightMode={nightMode} handleNightMode={handleNightMode}/>
+      <Switch>
+        <Route exact path="/" component={()=><HomeComponent nightMode={nightMode}/>}/>
+        <Route exact path="/skills" component={()=><SkillsComponent nightMode={nightMode}/>}/>
+        <Route exact path="/experience" component={()=><ExpComponent nightMode={nightMode}/>}/>
+        <Route exact path="/connect" component={()=><ConnectComponent nightMode={nightMode}/>}/>
+        <Route exact path="/about" component={()=><AboutComponent nightMode={nightMode}/>}/>
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;
