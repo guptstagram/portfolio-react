@@ -1,6 +1,6 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
-#nav {
+/* #nav {
   position: fixed;
   width: 600px;
   height: 600px;
@@ -120,7 +120,6 @@
 .open .m3 {
   transition-delay: 0.2s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
-  opacity: 1;
 }
 
 .m4 {
@@ -155,11 +154,11 @@
   transition-delay: 0.3s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 130deg);
   opacity: 1;
-}
+} */
 
 /* --------------------------- MEDIA QUERY ---------------------------- */
 
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
   #nav {
     width: 450px;
     height: 450px;
@@ -206,4 +205,4 @@
     bottom: 0px;
     left: 0px;
   }
-}
+} */

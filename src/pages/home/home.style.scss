@@ -1,0 +1,80 @@
+.home-section {
+  text-align: center;
+  font-family: "Lexend Giga", sans-serif;
+  .hero-text {
+    font-size: 7rem;
+  }
+  .headline-text {
+    font-size: 4rem;
+  }
+  .tagline-text {
+    font-size: 2.9rem;
+  }
+  .caption-text {
+    display: inline-block;
+    padding-top: 50px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .caption-text-visible {
+    opacity: 1;
+  }
+
+  .cursor-text:after {
+    content: "|" !important;
+    color: #ed4457;
+    opacity: 1;
+    animation: blinkCursor 0.5s cubic-bezier(0, 1, 0.5, 1) infinite alternate;
+
+    @keyframes blinkCursor {
+      @for $i from 0 through 10 {
+        #{$i * 10%} {
+          @if $i<5 {
+            opacity: (10- ($i * 2)) * 0.1;
+          } @else {
+            opacity: (($i * 2)-10) * 0.1;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .hero-text {
+      font-size: 6rem;
+    }
+    .headline-text {
+      font-size: 3.4rem;
+    }
+    .tagline-text {
+      font-size: 2.5rem;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .hero-text {
+      font-size: 5rem;
+    }
+    .headline-text {
+      font-size: 2.8rem;
+    }
+    .tagline-text {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .hero-text {
+      font-size: 2.5rem;
+    }
+    .headline-text {
+      font-size: 1.4rem;
+    }
+    .tagline-text {
+      font-size: 1rem;
+    }
+  }
+}
+
+.night {
+  .home-section {
+    color: #ccd6f6;
+  }
+}

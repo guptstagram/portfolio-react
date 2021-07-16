@@ -1,0 +1,60 @@
+.hover-eff {
+  cursor: pointer;
+  transition: color 0.25s;
+  &.red {
+    &:hover {
+      color: #ed4457;
+    }
+  }
+  &.green {
+    &:hover {
+      color: #64ffda;
+    }
+  }
+}
+.anim-text {
+  display: inline-block;
+  animation: animText 1s ease-out;
+  &.red {
+    color: #ed4457;
+  }
+  &.green {
+    color: #64ffda;
+  }
+}
+
+@keyframes animText {
+  0% {
+    transform: scale(0.4);
+  }
+  10% {
+    transform: scale(0.4);
+  }
+  20% {
+    transform: scale(0.4);
+  }
+  30% {
+    transform: scale(0.6);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

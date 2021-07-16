@@ -1,0 +1,37 @@
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .image-section {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    img {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+
+  .text-section {
+    flex: 0.6;
+    padding-right: 20px;
+    h1,
+    h3,
+    p {
+      margin: 20px 0;
+    }
+    h1 {
+      font-family: "Lexend Peta", sans-serif;
+      line-height: 1.25;
+    }
+    h3 {
+      font-family: "Lexend Peta", sans-serif;
+      line-height: 1.25;
+    }
+    p {
+      font-family: "Work Sans", sans-serif;
+      line-height: 1.88;
+      font-weight: bold;
+    }
+  }
+}

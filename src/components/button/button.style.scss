@@ -1,0 +1,35 @@
+.guptstagram-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px 0;
+  box-shadow: 0 0 15px 0 rgba(47, 48, 50, 0.15);
+
+  &.red {
+    color: #ed4457;
+    border: 2px solid #f5bbbf;
+    background-color: #f8f8f8;
+    &:hover {
+      background-color: #f5bbbf;
+      border: 2px solid #f8f8f8;
+      color: #e5eff8;
+    }
+  }
+  &.green {
+    color: #64ffda;
+    border: 2px solid #64ffda;
+    background-color: #020c1b;
+    &:hover {
+      background-color: #64ffda;
+      border: 2px solid #020c1b;
+      color: #0a192f;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
