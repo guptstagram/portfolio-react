@@ -6,6 +6,10 @@
     font-weight: bold;
     line-height: 1.88;
     font-size: 20px;
-    
+  }
+  @media only screen and (max-width: 767px) {
+    p {
+      font-size: 14px;
+    }
   }
 }

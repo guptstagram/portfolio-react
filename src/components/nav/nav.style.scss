@@ -47,6 +47,21 @@ nav {
     width: 40px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .nav-icon {
+    top: 280px;
+    right: 280px;
+    bottom: 280px;
+    left: 280px;
+    font-size: 18px;
+  }
+  .opened {
+    .nav-icon {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
 
 .opened {
   .m1,
@@ -58,5 +73,16 @@ nav {
   .circle {
     transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 140deg);
     opacity: 1;
+  }
+  @media only screen and (max-width: 576px) {
+    .m1,
+    .m2,
+    .m3,
+    .m4,
+    .m5,
+    .m6,
+    .circle {
+      transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 150deg);
+    }
   }
 }

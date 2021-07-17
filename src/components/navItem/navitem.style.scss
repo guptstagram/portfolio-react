@@ -35,6 +35,14 @@
   &.night {
     background: #050c16;
   }
+  @media only screen and (max-width: 576px) {
+    .m1 {
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
 }
 .m2 {
   top: 50px;
@@ -47,6 +55,14 @@
   }
   &.night {
     background: #050d18;
+  }
+  @media only screen and (max-width: 576px) {
+    .m2 {
+      top: 40px;
+      right: 40px;
+      bottom: 40px;
+      left: 40px;
+    }
   }
 }
 .m3 {
@@ -61,6 +77,14 @@
   &.night {
     background: #060f1c;
   }
+  @media only screen and (max-width: 576px) {
+    .m3 {
+      top: 80px;
+      right: 80px;
+      bottom: 80px;
+      left: 80px;
+    }
+  }
 }
 .m4 {
   top: 150px;
@@ -73,6 +97,14 @@
   }
   &.night {
     background: #071221;
+  }
+  @media only screen and (max-width: 576px) {
+    .m4 {
+      top: 120px;
+      right: 120px;
+      bottom: 120px;
+      left: 120px;
+    }
   }
 }
 .m5 {
@@ -87,6 +119,14 @@
   &.night {
     background: #081426;
   }
+  @media only screen and (max-width: 576px) {
+    .m5 {
+      top: 160px;
+      right: 160px;
+      bottom: 160px;
+      left: 160px;
+    }
+  }
 }
 .m6 {
   top: 250px;
@@ -100,43 +140,51 @@
   &.night {
     background: #09172a;
   }
+  @media only screen and (max-width: 576px) {
+    .m6 {
+      top: 200px;
+      right: 200px;
+      bottom: 200px;
+      left: 200px;
+    }
+  }
 }
 
-@media only screen and (max-width: 576px) {
-  .m6 {
-    top: 200px;
-    right: 200px;
-    bottom: 200px;
-    left: 200px;
-  }
-  .m5 {
-    top: 160px;
-    right: 160px;
-    bottom: 160px;
-    left: 160px;
-  }
-  .m4 {
-    top: 120px;
-    right: 120px;
-    bottom: 120px;
-    left: 120px;
-  }
-  .m3 {
-    top: 80px;
-    right: 80px;
-    bottom: 80px;
-    left: 80px;
-  }
-  .m2 {
-    top: 40px;
-    right: 40px;
-    bottom: 40px;
-    left: 40px;
-  }
-  .m1 {
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-  }
-}
+// @media only screen and (max-width: 576px) {
+//   .m6 {
+//     top: 200px;
+//     right: 200px;
+//     bottom: 200px;
+//     left: 200px;
+//   }
+//   .m5 {
+//     top: 160px;
+//     right: 160px;
+//     bottom: 160px;
+//     left: 160px;
+//   }
+//   .m4 {
+//     top: 120px;
+//     right: 120px;
+//     bottom: 120px;
+//     left: 120px;
+//   }
+//   .m3 {
+//     top: 80px;
+//     right: 80px;
+//     bottom: 80px;
+//     left: 80px;
+//   }
+//   .m2 {
+//     top: 40px;
+//     right: 40px;
+//     bottom: 40px;
+//     left: 40px;
+//   }
+//   .m1 {
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     left: 0px;
+//   }
+// }
