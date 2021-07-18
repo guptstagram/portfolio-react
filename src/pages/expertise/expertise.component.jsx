@@ -3,7 +3,7 @@ import React from "react";
 const Expertise = () => {
   return (
     <div className="expertise-section">
-      <p>Hesd</p>
+      <p>Sleeeping on it. Rolling out soon...</p>
     </div>
   );
 };

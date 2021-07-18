@@ -1,7 +1,10 @@
 import React from "react";
 
-import menuIcon from "../../assets/menu.png";
-import closeIcon from "../../assets/cross.png";
+import menuRed from "../../assets/menu-red.png";
+import menuGreen from "../../assets/menu-green.png";
+import crossRed from "../../assets/cross-red.png";
+import crossGreen from "../../assets/cross-green.png";
+
 import "./nav.style.scss";
 
 import { DetailsContext } from "../../contexts/myDetailsContext";
@@ -34,7 +37,18 @@ const Nav = () => {
         className={`nav-icon circle ${nightMode ? "night" : "day"}`}
         onClick={handleMenu}
       >
-        <img src={navOpen ? closeIcon : menuIcon} alt="navbar-icon" />
+        <img
+          src={
+            navOpen
+              ? nightMode
+                ? crossGreen
+                : crossRed
+              : nightMode
+              ? menuGreen
+              : menuRed
+          }
+          alt="navbar-icon"
+        />
       </div>
     </nav>
   );
