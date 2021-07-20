@@ -16,13 +16,17 @@
     transform: scale3d(4, 4, 4);
     position: absolute;
     bottom: 80px;
-    background: #e5eff8;
     z-index: 1;
     cursor: pointer;
     margin-left: 10px;
     transition: all 0.25s;
+    transition: background 1s;
     &.open {
+      background: none;
       fill: #ed4457;
+    }
+    &.close {
+      background: #e5eff8;
     }
   }
   .connect-icons {
@@ -46,8 +50,8 @@
 
 .night {
   .connect-box {
-    background: #0a192f;
     &.close {
+      background: #0a192f;
       fill: #8892b0;
     }
     &.open {
