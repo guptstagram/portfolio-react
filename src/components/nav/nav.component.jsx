@@ -48,8 +48,8 @@ const Nav = () => {
               : menuRed
           }
           alt="navbar-icon"
-          width="auto"
-          height="auto"
+          width="40"
+          height="40"
         />
       </div>
     </nav>
