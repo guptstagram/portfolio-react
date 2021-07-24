@@ -5,7 +5,7 @@ import { DetailsContext } from "../../contexts/myDetailsContext";
 import "./splashscreen.styles.scss";
 
 const SplashScreen = () => {
-  let timer;
+  let timer = React.useRef(0);
 
   const { splashLoaded, nightMode, handleSplashLoaded } =
     React.useContext(DetailsContext);
@@ -14,11 +14,11 @@ const SplashScreen = () => {
   const [textSwipe, setTextSwipe] = React.useState(false);
 
   React.useEffect(() => {
-    timer = setTimeout(() => setWidthZero(true), 100);
-    timer = setTimeout(() => setTextSwipe(true), 1100);
-    timer = setTimeout(handleSplashLoaded, 1800);
+    timer.current = setTimeout(() => setWidthZero(true), 100);
+    timer.current = setTimeout(() => setTextSwipe(true), 1100);
+    timer.current = setTimeout(handleSplashLoaded, 1800);
     return () => clearTimeout(timer);
-  }, []);
+  }, [handleSplashLoaded]);
 
   return splashLoaded ? (
     <Redirect to="/home" />
