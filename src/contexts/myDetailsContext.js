@@ -4,6 +4,7 @@ export const DetailsContext = React.createContext();
 
 export const DetailsProvider = (props) => {
   const [myDetails, setMyDetails] = React.useState({
+    splashLoaded: false,
     nightMode: true,
     navOpen: false,
     navMenus: ["Home", "Expertise", "Experience", "Connect", "About", "Lights"],
@@ -79,9 +80,13 @@ export const DetailsProvider = (props) => {
     nightMode: !myDetails.nightMode,
     navOpen: !myDetails.navOpen,
   });
+  const handleSplashLoaded = () => setMyDetails({
+    ...myDetails,
+    splashLoaded: true
+  });
 
   return (
-    <DetailsContext.Provider value={{ ...myDetails, handleMenu, handleLights }}>
+    <DetailsContext.Provider value={{ ...myDetails, handleMenu, handleLights, handleSplashLoaded }}>
       {props.children}
     </DetailsContext.Provider>
   );
