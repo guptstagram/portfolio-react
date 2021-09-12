@@ -7,6 +7,7 @@ export const DetailsProvider = (props) => {
     splashLoaded: false,
     nightMode: true,
     navOpen: false,
+    logo:"<guptstagram/>",
     navMenus: ["Home", "Expertise", "Experience", "Connect", "About", "Lights"],
     resumeURL:
       "https://drive.google.com/file/d/1da8Gu5aj0Esz-GTp-wqpPrOVt56qKAmE/view?usp=sharing",
@@ -34,8 +35,8 @@ export const DetailsProvider = (props) => {
     about: {
       heading: "ABOUT SOURABH",
       position: "Frontend Developer",
-      organisation: "Tata Consultancy Services",
-      basedIn: "Gandhinagar",
+      organisation: "Bunch Microtechnologies Pvt Ltd",
+      basedIn: "Noida, India",
       tagline: function () { return `I'm a ${this.position} in ${this.organisation} based in ${this.basedIn}.` },
       p: [
         "My strengths include problem-solving capabilities and expertise in Data Structures and Algorithms. The Passion driving me is building highly scalable and user-friendly apps with a performance-oriented approach.",
