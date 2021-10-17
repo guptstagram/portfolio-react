@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .about-section {
   width: 100%;
   display: flex;
@@ -8,7 +10,7 @@
     justify-content: center;
     padding: 20px 0;
     img {
-      border-bottom: 5px solid #ed4457;
+      border-bottom: 5px solid $light-highlight-color;
       border-radius: 1%;
       width: 60%;
       transition: all 1s;
@@ -66,7 +68,7 @@
 .night {
   .image-section {
     img {
-      border-bottom: 5px solid #64ffda;
+      border-bottom: 5px solid $dark-highlight-color;
     }
   }
 }

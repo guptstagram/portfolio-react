@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .loader {
   display: flex;
   justify-content: space-around;
@@ -6,12 +8,12 @@
   height: 100px;
   &.red {
     div {
-      background: #ed4457;
+      background: $light-highlight-color;
     }
   }
   &.green {
     div {
-      background: #64ffda;
+      background: $dark-highlight-color;
     }
   }
   div {

@@ -1,5 +1,7 @@
+@import "../../colors.scss";
+
 .connect-icon {
-  background-color: #f8f8f8;
+  background-color: $light-border-color;
   height: 50px;
   width: 50px;
   display: flex;
@@ -13,35 +15,35 @@
     &:nth-of-type(1) {
       transform: translate3d(-150px, 0, 0) rotate(360deg);
       &:hover {
-        fill: #ed4457;
+        fill: $light-highlight-color;
         transform: translate3d(-150px, 0, 0) rotate(360deg) scale(1.5);
       }
     }
     &:nth-of-type(2) {
       transform: translate3d(150px, 0, 0) rotate(360deg);
       &:hover {
-        fill: #ed4457;
+        fill: $light-highlight-color;
         transform: translate3d(150px, 0, 0) rotate(360deg) scale(1.5);
       }
     }
     &:nth-of-type(3) {
       transform: translate3d(100px, -100px, 0) rotate(360deg);
       &:hover {
-        fill: #ed4457;
+        fill: $light-highlight-color;
         transform: translate3d(100px, -100px, 0) rotate(360deg) scale(1.5);
       }
     }
     &:nth-of-type(4) {
       transform: translate3d(0, -150px, 0) rotate(360deg);
       &:hover {
-        fill: #ed4457;
+        fill: $light-highlight-color;
         transform: translate3d(0, -150px, 0) rotate(360deg) scale(1.5);
       }
     }
     &:nth-of-type(5) {
       transform: translate3d(-100px, -100px, 0) rotate(360deg);
       &:hover {
-        fill: #ed4457;
+        fill: $light-highlight-color;
         transform: translate3d(-100px, -100px, 0) rotate(360deg) scale(1.5);
       }
     }
@@ -50,40 +52,40 @@
 
 .night {
   .connect-icon {
-    background-color: #ccd6f6;
+    background-color: $dark-text-color-home;
     &.open {
       &:nth-of-type(1) {
         transform: translate3d(-150px, 0, 0) rotate(360deg);
         &:hover {
-          fill: #64ffda;
+          fill: $dark-highlight-color;
           transform: translate3d(-150px, 0, 0) rotate(360deg) scale(1.5);
         }
       }
       &:nth-of-type(2) {
         transform: translate3d(150px, 0, 0) rotate(360deg);
         &:hover {
-          fill: #64ffda;
+          fill: $dark-highlight-color;
           transform: translate3d(150px, 0, 0) rotate(360deg) scale(1.5);
         }
       }
       &:nth-of-type(3) {
         transform: translate3d(100px, -100px, 0) rotate(360deg);
         &:hover {
-          fill: #64ffda;
+          fill: $dark-highlight-color;
           transform: translate3d(100px, -100px, 0) rotate(360deg) scale(1.5);
         }
       }
       &:nth-of-type(4) {
         transform: translate3d(0, -150px, 0) rotate(360deg);
         &:hover {
-          fill: #64ffda;
+          fill: $dark-highlight-color;
           transform: translate3d(0, -150px, 0) rotate(360deg) scale(1.5);
         }
       }
       &:nth-of-type(5) {
         transform: translate3d(-100px, -100px, 0) rotate(360deg);
         &:hover {
-          fill: #64ffda;
+          fill: $dark-highlight-color;
           transform: translate3d(-100px, -100px, 0) rotate(360deg) scale(1.5);
         }
       }

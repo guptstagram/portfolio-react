@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .splash-screen-container {
   .splash-screen-bg {
     position: absolute;
@@ -7,10 +9,10 @@
     height: 100vh;
     transition: width 1s ease-out;
     &.day {
-      background: #f8f8f8;
+      background: $light-border-color;
     }
     &.night {
-      background: #020c1b;
+      background: $dark-border-color;
     }
     &.width-zero {
       width: 0;
@@ -31,10 +33,10 @@
     flex-direction: column;
     transition: left 0.5s ease-out;
     &.day {
-      color: #ed4457;
+      color: $light-highlight-color;
     }
     &.night {
-      color: #64ffda;
+      color: $dark-highlight-color;
     }
     &.text-swipe {
       left: 110vw;
