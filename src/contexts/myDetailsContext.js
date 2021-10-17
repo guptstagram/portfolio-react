@@ -7,7 +7,7 @@ export const DetailsProvider = (props) => {
     splashLoaded: false,
     nightMode: true,
     navOpen: false,
-    logo:"<guptstagram/>",
+    logo: "<guptstagram/>",
     navMenus: ["Home", "Expertise", "Experience", "Connect", "About", "Lights"],
     resumeURL:
       "https://drive.google.com/file/d/1da8Gu5aj0Esz-GTp-wqpPrOVt56qKAmE/view?usp=sharing",
@@ -22,6 +22,8 @@ export const DetailsProvider = (props) => {
       "Redux",
       "JavaScript",
       "Material UI",
+      "Next.js",
+      "Vue.js",
       "JSS",
       "MobX",
       "HTML",
@@ -37,7 +39,9 @@ export const DetailsProvider = (props) => {
       position: "Software Engineer",
       organisation: "Classplus (Bunch Microtechnologies Pvt Ltd)",
       basedIn: "Noida, India",
-      tagline: function () { return `I'm a ${this.position} at ${this.organisation} based in ${this.basedIn}.` },
+      tagline: function () {
+        return `I'm a ${this.position} at ${this.organisation} based in ${this.basedIn}.`;
+      },
       p: [
         "My strengths include problem-solving capabilities and expertise in Data Structures and Algorithms. The Passion driving me is building highly scalable and user-friendly apps with a performance-oriented approach.",
         "I love transforming complex problems into simple, beautiful and intuitive code and sometimes designing UI/UX. When I'm not coding, tweeting or pushing pixels, you'll find me writing, making tea, drinking shakes or playing cricket.",
@@ -61,7 +65,7 @@ export const DetailsProvider = (props) => {
       },
       linkedin: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/guptstagram/"
+        url: "https://www.linkedin.com/in/guptstagram/",
       },
       insta: {
         name: "Instagram",
@@ -72,22 +76,27 @@ export const DetailsProvider = (props) => {
     },
   });
 
-  const handleMenu = () => setMyDetails({
-    ...myDetails,
-    navOpen: !myDetails.navOpen,
-  });
-  const handleLights = () => setMyDetails({
-    ...myDetails,
-    nightMode: !myDetails.nightMode,
-    navOpen: !myDetails.navOpen,
-  });
-  const handleSplashLoaded = () => setMyDetails({
-    ...myDetails,
-    splashLoaded: true
-  });
+  const handleMenu = () =>
+    setMyDetails({
+      ...myDetails,
+      navOpen: !myDetails.navOpen,
+    });
+  const handleLights = () =>
+    setMyDetails({
+      ...myDetails,
+      nightMode: !myDetails.nightMode,
+      navOpen: !myDetails.navOpen,
+    });
+  const handleSplashLoaded = () =>
+    setMyDetails({
+      ...myDetails,
+      splashLoaded: true,
+    });
 
   return (
-    <DetailsContext.Provider value={{ ...myDetails, handleMenu, handleLights, handleSplashLoaded }}>
+    <DetailsContext.Provider
+      value={{ ...myDetails, handleMenu, handleLights, handleSplashLoaded }}
+    >
       {props.children}
     </DetailsContext.Provider>
   );
