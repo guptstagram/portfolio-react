@@ -14,7 +14,7 @@ export const DetailsProvider = (props) => {
     intro: "HELLO",
     name: "SOURABH GUPTA",
     hero: "I'M SOURABH",
-    headline: "FRONTEND DEVELOPER",
+    headline: "A FRONTEND DEVELOPER",
     tagline: "I DESIGN & DEVELOP WEB APPS",
     caption: "I stand on a fine spot where Design fuses into Code.",
     skills: [
@@ -34,10 +34,10 @@ export const DetailsProvider = (props) => {
     ],
     about: {
       heading: "ABOUT SOURABH",
-      position: "Frontend Developer",
-      organisation: "Bunch Microtechnologies Pvt Ltd",
+      position: "Software Engineer",
+      organisation: "Classplus (Bunch Microtechnologies Pvt Ltd)",
       basedIn: "Noida, India",
-      tagline: function () { return `I'm a ${this.position} in ${this.organisation} based in ${this.basedIn}.` },
+      tagline: function () { return `I'm a ${this.position} at ${this.organisation} based in ${this.basedIn}.` },
       p: [
         "My strengths include problem-solving capabilities and expertise in Data Structures and Algorithms. The Passion driving me is building highly scalable and user-friendly apps with a performance-oriented approach.",
         "I love transforming complex problems into simple, beautiful and intuitive code and sometimes designing UI/UX. When I'm not coding, tweeting or pushing pixels, you'll find me writing, making tea, drinking shakes or playing cricket.",
@@ -46,7 +46,7 @@ export const DetailsProvider = (props) => {
     connect: {
       git: {
         name: "GitHub",
-        text: "I code and keep on",
+        text: "I keep my code on",
         url: "https://github.com/guptstagram/",
       },
       medium: {
@@ -56,7 +56,7 @@ export const DetailsProvider = (props) => {
       },
       twitter: {
         name: "Tweet",
-        text: "When I feel like to come out of long code and blog writings I love to",
+        text: "When I feel like taking a break from coding and writing blogs, I love to",
         url: "https://twitter.com/guptstagram/",
       },
       linkedin: {
