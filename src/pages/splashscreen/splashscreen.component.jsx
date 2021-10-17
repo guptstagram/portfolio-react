@@ -2,7 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import { DetailsContext } from "../../contexts/myDetailsContext";
 
-import "./splashscreen.styles.scss";
+import "./splashscreen.style.scss";
 
 const SplashScreen = () => {
   let timer = React.useRef(0);
