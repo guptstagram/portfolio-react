@@ -1,18 +1,24 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // import Nav from './components/nav/nav.component';
-import Layout from './layout/layout.component';
-import Loader from './components/loader/loader.component';
+import Layout from "./layout/layout.component";
+import Loader from "./components/loader/loader.component";
 
-const Nav = React.lazy(() => import('./components/nav/nav.component'))
-const SplashScreen = React.lazy(() => import('./pages/splashscreen/splashscreen.component'));
-const Home = React.lazy(() => import('./pages/home/home.component'));
-const Expertise = React.lazy(() => import('./pages/expertise/expertise.component'));
-const Experience = React.lazy(() => import('./pages/experience/experience.component'));
-const Connect = React.lazy(() => import('./pages/connect/connect.component'));
-const About = React.lazy(() => import('./pages/about/about.component'));
-
+const Nav = React.lazy(() => import("./components/nav/nav.component"));
+const Logo = React.lazy(() => import("./components/logo/logo.component"));
+const SplashScreen = React.lazy(() =>
+  import("./pages/splashscreen/splashscreen.component")
+);
+const Home = React.lazy(() => import("./pages/home/home.component"));
+const Expertise = React.lazy(() =>
+  import("./pages/expertise/expertise.component")
+);
+const Experience = React.lazy(() =>
+  import("./pages/experience/experience.component")
+);
+const Connect = React.lazy(() => import("./pages/connect/connect.component"));
+const About = React.lazy(() => import("./pages/about/about.component"));
 
 const App = () => {
   return (
@@ -21,6 +27,7 @@ const App = () => {
         <Layout>
           <React.Suspense fallback={<Loader />}>
             <Nav />
+            <Logo />
             <Switch>
               <Route exact path="/" component={SplashScreen} />
               <Route exact path="/home" component={Home} />
@@ -34,6 +41,6 @@ const App = () => {
       </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;

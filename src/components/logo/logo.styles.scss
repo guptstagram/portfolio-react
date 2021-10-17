@@ -1,0 +1,15 @@
+.guptstagram-logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-family: "Lexend Peta", sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  &.day {
+    color: #ed4457;
+  }
+  &.night {
+    color: #64ffda;
+  }
+}
