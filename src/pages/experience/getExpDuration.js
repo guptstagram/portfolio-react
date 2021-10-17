@@ -6,5 +6,9 @@ export const getExpDuration = () => {
     const years = Math.floor(diffDays / 365);
     const months = Math.floor((diffDays % 365) / 30);
     const days = Math.floor((diffDays % 365) % 30);
-    return `${years} year${years > 1 ? "s" : ""} ${months} month${months > 1 ? "s" : ""} and ${days} day${days > 1 ? "s" : ""} `
+    let output = "";
+    if (years > 0) output += `${years} year${years > 1 ? "s" : ""}`
+    if (months > 0) output += ` ${months} month${months > 1 ? "s" : ""}`
+    if (days > 0) output += ` and ${days} day${days > 1 ? "s" : ""} `
+    return output;
 }

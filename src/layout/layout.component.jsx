@@ -1,5 +1,5 @@
 import React from "react";
-import "./layout.component.scss";
+import "./layout.style.scss";
 
 import { DetailsContext } from "../contexts/myDetailsContext";
 

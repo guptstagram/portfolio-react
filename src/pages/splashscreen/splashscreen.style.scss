@@ -1,0 +1,58 @@
+.splash-screen-container {
+  .splash-screen-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50vw;
+    height: 100vh;
+    transition: width 1s ease-out;
+    &.day {
+      background: #f8f8f8;
+    }
+    &.night {
+      background: #020c1b;
+    }
+    &.width-zero {
+      width: 0;
+    }
+  }
+  .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 35vw;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 15rem;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: left 0.5s ease-out;
+    &.day {
+      color: #ed4457;
+    }
+    &.night {
+      color: #64ffda;
+    }
+    &.text-swipe {
+      left: 110vw;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .text-wrapper {
+      left: 30vw;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .text-wrapper {
+      left: 25vw;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .text-wrapper {
+      font-size: 8rem;
+    }
+  }
+}

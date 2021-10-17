@@ -1,4 +1,5 @@
 import React from "react";
+import "./expertise.style.scss";
 
 const Expertise = () => {
   return (

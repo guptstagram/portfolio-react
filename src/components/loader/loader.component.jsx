@@ -1,6 +1,6 @@
 import React from "react";
 import { DetailsContext } from "../../contexts/myDetailsContext";
-import "./loader.component.scss";
+import "./loader.style.scss";
 
 const Loader = () => {
   const { nightMode } = React.useContext(DetailsContext);
