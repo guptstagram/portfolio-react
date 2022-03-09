@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="about-section">
       <div className="image-section">
-        <img src={image} alt="sourabh-gupta" />
+        <img src={image} alt="sourabh-gupta"/>
       </div>
       <div className="text-section">
         <h1>{about.heading}</h1>
