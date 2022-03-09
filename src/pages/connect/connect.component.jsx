@@ -16,7 +16,8 @@ const Connect = () => {
   return (
     <div className="connect-section">
       {Object.keys(connect).map(
-        (item) => connect[item].text && <ParaLink>{connect[item]}</ParaLink>
+        (item, index) =>
+          connect[item].text && <ParaLink key={index}>{connect[item]}</ParaLink>
       )}
       <p>{boxText}</p>
       <div className="connect-icons">
@@ -35,9 +36,13 @@ const Connect = () => {
             </svg>
           </div>
           {Object.keys(connect).map(
-            (item) =>
+            (item, index) =>
               typeof connect[item] === "object" && (
-                <ConnectIcon status={!boxText} social={connect[item]} />
+                <ConnectIcon
+                  key={index}
+                  status={!boxText}
+                  social={connect[item]}
+                />
               )
           )}
         </div>

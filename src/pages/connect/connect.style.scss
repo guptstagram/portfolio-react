@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .connect-section {
   text-align: center;
   margin-bottom: 10rem;
@@ -23,10 +25,10 @@
     transition: background 1s;
     &.open {
       background: none;
-      fill: #ed4457;
+      fill: $light-highlight-color;
     }
     &.close {
-      background: #e5eff8;
+      background: $light-background-color;
     }
   }
   .connect-icons {
@@ -51,11 +53,11 @@
 .night {
   .connect-box {
     &.close {
-      background: #0a192f;
-      fill: #8892b0;
+      background: $dark-background-color;
+      fill: $dark-text-color;
     }
     &.open {
-      fill: #64ffda;
+      fill: $dark-highlight-color;
     }
   }
 }

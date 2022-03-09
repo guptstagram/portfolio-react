@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .circle {
   position: absolute;
   text-align: center;
@@ -12,13 +14,13 @@
   }
   &.day {
     &:hover {
-      color: #ed4457;
+      color: $light-highlight-color;
     }
   }
   &.night {
-    color: #8892b0;
+    color: $dark-text-color;
     &:hover {
-      color: #64ffda;
+      color: $dark-highlight-color;
     }
   }
 }
@@ -30,10 +32,10 @@
   left: 0px;
   transition-delay: 0.1s;
   &.day {
-    background: #f2f7fb;
+    background: $day-m1;
   }
   &.night {
-    background: #050c16;
+    background: $night-m1;
   }
   @media only screen and (max-width: 576px) {
     .m1 {
@@ -51,10 +53,10 @@
   left: 50px;
   transition-delay: 0.2s;
   &.day {
-    background: #f1f6fb;
+    background: $day-m2;
   }
   &.night {
-    background: #050d18;
+    background: $night-m2;
   }
   @media only screen and (max-width: 576px) {
     .m2 {
@@ -72,10 +74,10 @@
   left: 100px;
   transition-delay: 0.3s;
   &.day {
-    background: #eff5fb;
+    background: $day-m3;
   }
   &.night {
-    background: #060f1c;
+    background: $night-m3;
   }
   @media only screen and (max-width: 576px) {
     .m3 {
@@ -93,10 +95,10 @@
   left: 150px;
   transition-delay: 0.4s;
   &.day {
-    background: #edf4fa;
+    background: $day-m4;
   }
   &.night {
-    background: #071221;
+    background: $night-m4;
   }
   @media only screen and (max-width: 576px) {
     .m4 {
@@ -114,10 +116,10 @@
   left: 200px;
   transition-delay: 0.5s;
   &.day {
-    background: #eaf2f9;
+    background: $day-m5;
   }
   &.night {
-    background: #081426;
+    background: $night-m5;
   }
   @media only screen and (max-width: 576px) {
     .m5 {
@@ -135,10 +137,10 @@
   left: 250px;
   transition-delay: 0.6s;
   &.day {
-    background: #e8f1f9;
+    background: $day-m6;
   }
   &.night {
-    background: #09172a;
+    background: $night-m6;
   }
   @media only screen and (max-width: 576px) {
     .m6 {
@@ -149,42 +151,3 @@
     }
   }
 }
-
-// @media only screen and (max-width: 576px) {
-//   .m6 {
-//     top: 200px;
-//     right: 200px;
-//     bottom: 200px;
-//     left: 200px;
-//   }
-//   .m5 {
-//     top: 160px;
-//     right: 160px;
-//     bottom: 160px;
-//     left: 160px;
-//   }
-//   .m4 {
-//     top: 120px;
-//     right: 120px;
-//     bottom: 120px;
-//     left: 120px;
-//   }
-//   .m3 {
-//     top: 80px;
-//     right: 80px;
-//     bottom: 80px;
-//     left: 80px;
-//   }
-//   .m2 {
-//     top: 40px;
-//     right: 40px;
-//     bottom: 40px;
-//     left: 40px;
-//   }
-//   .m1 {
-//     top: 0px;
-//     right: 0px;
-//     bottom: 0px;
-//     left: 0px;
-//   }
-// }

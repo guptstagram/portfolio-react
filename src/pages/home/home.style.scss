@@ -1,6 +1,9 @@
+@import "../../colors.scss";
+
 .home-section {
   text-align: center;
   font-family: "Lexend Giga", sans-serif;
+  user-select: none;
   .hero-text {
     font-size: 7rem;
   }
@@ -22,7 +25,7 @@
 
   .cursor-text:after {
     content: "|" !important;
-    color: #ed4457;
+    color: $light-highlight-color;
     opacity: 1;
     animation: blinkCursor 0.5s cubic-bezier(0, 1, 0.5, 1) infinite alternate;
 
@@ -75,9 +78,9 @@
 
 .night {
   .home-section {
-    color: #ccd6f6;
+    color: $dark-text-color-home;
   }
   .cursor-text:after {
-    color: #64ffda;
+    color: $dark-highlight-color;
   }
 }

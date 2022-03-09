@@ -1,14 +1,16 @@
+@import "../../colors.scss";
+
 .hover-eff {
   cursor: pointer;
   transition: color 0.25s;
   &.red {
     &:hover {
-      color: #ed4457;
+      color: $light-highlight-color;
     }
   }
   &.green {
     &:hover {
-      color: #64ffda;
+      color: $dark-highlight-color;
     }
   }
 }
@@ -16,10 +18,10 @@
   display: inline-block;
   animation: animText 1s ease-out;
   &.red {
-    color: #ed4457;
+    color: $light-highlight-color;
   }
   &.green {
-    color: #64ffda;
+    color: $dark-highlight-color;
   }
 }
 
